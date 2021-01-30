@@ -1,3 +1,15 @@
 header {
-    background-color: aqua;
+    background-color: aquamarine;
+}
+ul {
+    display: inline;
+}
+section {
+    color: brown;
+}
+.blue {
+    color: darkblue;
+}
+#black {
+    color: black;
 }
