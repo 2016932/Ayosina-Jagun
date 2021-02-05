@@ -1,0 +1,20 @@
+*{
+    margin: 10px, 0px, 0px, 5px;
+    padding-inline: auto;
+    padding-right: 5%;
+    float: none;
+}
+#login-form{
+    padding-inline: 32%;
+}
+
+#main-holder h1{
+padding-inline: 32%;
+}
+#login-error-msg-holder p{
+   padding-inline: 34%;
+}
+body{
+    margin: 10%;
+    padding-left: 6%;
+}
