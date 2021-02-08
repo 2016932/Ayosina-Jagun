@@ -1,20 +1,38 @@
-*{
-    margin: 10px, 0px, 0px, 5px;
-    padding-inline: auto;
-    padding-right: 5%;
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid;
+  box-sizing: border-box;
+  background-color: #e2d5d5;
+  }
+  button {
+    background-color: royalblue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    width: 100%;
+  }
+  button:hover {
+    opacity: 0.8;
+  }
+  .container {  
+    padding: 16px;
+  }
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  span.psw {
+    display: block;
     float: none;
-}
-#login-form{
-    padding-inline: 32%;
-}
-
-#main-holder h1{
-padding-inline: 32%;
-}
-#login-error-msg-holder p{
-   padding-inline: 34%;
-}
-body{
-    margin: 10%;
-    padding-left: 6%;
-}
+  }
+  body {
+      background: silver;
+  }
+  #main-holder {
+padding: 50px, 0px;
+background-color: blueviolet;
+color: rgb(150, 146, 106);
+  }
