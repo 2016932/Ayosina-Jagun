@@ -7,15 +7,12 @@
   background-color: #e2d5d5;
   }
   button {
-    background-color: royalblue;
+    background-color: rgb(123, 144, 206);
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     width: 100%;
-  }
-  button:hover {
-    opacity: 0.8;
   }
   .container {  
     padding: 16px;
@@ -28,10 +25,7 @@
     display: block;
     float: none;
   }
-  body {
-      background: silver;
-  }
-  #main-holder {
+  #Login {
 padding: 50px, 0px;
 background-color: blueviolet;
 color: rgb(150, 146, 106);
