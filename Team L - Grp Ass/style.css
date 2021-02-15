@@ -1,7 +1,15 @@
+*{
+  margin: auto;
+  padding: auto;
+} 
+body{
+  margin: 5% 25%;
+  background-color: #228CBE;
+}
   input[type=text], input[type=password] {
   width: 100%;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin: 1px 0;
   border: 1px solid;
   box-sizing: border-box;
   background-color: #e2d5d5;
@@ -30,3 +38,8 @@ padding: 50px, 0px;
 background-color: #228CBE;
 color: rgb(150, 146, 106);
   }
+#Login p {
+  font-weight: bolder;
+  font-size: 40px;
+  padding : 20px 0px;
+ }
