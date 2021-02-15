@@ -7,7 +7,7 @@
   background-color: #e2d5d5;
   }
   button {
-    background-color: rgb(123, 144, 206);
+    background-color: blueviolet;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -27,6 +27,6 @@
   }
   #Login {
 padding: 50px, 0px;
-background-color: blueviolet;
+background-color: #228CBE;
 color: rgb(150, 146, 106);
   }
