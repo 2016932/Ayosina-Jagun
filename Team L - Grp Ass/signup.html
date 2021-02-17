@@ -1,44 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,
-   initial-scale=1.0">
-  <title>Login</title>
-  <link rel="stylesheet" href="C:\Users\me\Downloads\clone\Ayosina-Jagun\Team L - Grp Ass\style.css">
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="assets/style2.css">
+    <link rel="stylesheet" href="assets/unsemantic-grid-responsive-tablet.css">
 
 </head>
 
 <body>
-  <main id="Login">
-  <img src="valetine image.jpg" alt="">
-    <p>Login Details</p>
+    <header>
+        <img src="valetine image.jpg" alt="">
+        <h1>Create Account</h1>
+    </header>
+    <main class="grid-container">
+        <div>
+            <form>
+                <p>Your name <br><input type="text" id="email" min="15" max="25"></p>
+                <p>Email <br> <input type="text" id="name"></p>
+                <p>Password <br> <input type="password" id="password"></p>
+                <p>Re-enter password <br> <input type="password" id="confirm password"></p>
+                <input type="submit" value="Create your account">
+            </form>
+            <p>Already have an account? <a href="#">Sign in</a></p>
+        </div>
+    </main>
 
-    <form>
-      <div class="container">
-        <label for="uname"><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
 
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
-
-        <button type="submit">Login</button>
-        <label>
-          <input type="checkbox" checked="checked" name="remember"> Remember me
-        </label>
-      </div>
-
-      <div class="container" style="background-color: #228CBE;">
-        <button type="button">Don't have an account?<a href="#">Signup</a></button>
-        <section id="Signup">
-            <h1>hdbsjjnsinfciwnasicniwnsi</h1>
-        </section>
-        <span class="psw">Forgot <a href="#">password?</a></span>
-      </div>
-    </form>
-  </main>
-  
 </body>
 
 </html>
