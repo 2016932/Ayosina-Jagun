@@ -22,3 +22,13 @@
         border: none;
         width: 100%;
       }
+      .grid-container {
+        padding: 50px, 0px;
+        background-color: #228CBE;
+        color: rgb(255, 234, 0);
+      }
+      .grid-container h1 {
+        font-weight: bolder;
+        font-size: 40px;
+        padding : 20px 0px;
+      }
