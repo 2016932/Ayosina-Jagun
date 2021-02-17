@@ -36,9 +36,9 @@ body{
   #Login {
 padding: 50px, 0px;
 background-color: #228CBE;
-color: rgb(150, 146, 106);
+color: rgb(190, 179, 52);
   }
-#Login p {
+#Login h1 {
   font-weight: bolder;
   font-size: 40px;
   padding : 20px 0px;

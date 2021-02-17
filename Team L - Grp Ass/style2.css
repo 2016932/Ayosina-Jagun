@@ -1,167 +1,24 @@
-/*@import "templatecolours.css";*/
-
-body{
-    max-width:960px;
-    margin-left:auto;
-    margin-right:auto;
-}
-nav>ul{
-
-    list-style-type:none;
-    margin:0;
-    padding:0;
-    overflow:hidden;
-}
-nav>ul>li{
-    float:left;
-    padding-bottom:10px;
-}
-nav ul li a{
-
-    display:block;
-    color: #000000;
-    text-align:center;
-    padding:10px 30px;
-    text-decoration: none;
-}
-li a:hover{color: #363636;}
-
-
-
-#hos{
-    width:300px;
-    padding-right:10px;
-}
-
-#cslogo{
-    width:150px;
-    padding-right:10px;
-    margin:10px;
-}
-#txlogo{
-    text-align: center;
-}
-
-h1{
-    font-family:'Roberto', sans-serif;
-    font-weight:300;
-    padding-bottom:10px;
-
-}
-h2{
-     font-family:'Roberto', sans-serif;
-     font-weight:300;
-     padding-bottom:10px;
-    text-align:center;
-
- }
-
-p, h2, h3, h4, h5, a{
-    font-family:'Roberto', sans-serif;
-    font-weight:400;
-}
-h3, h4, h5{
-    font-family:'Roberto', sans-serif;
-    font-weight:700;
-}
-
-footer{
-    background-color:#363636;
-}
-aside p,h3,h4{
-    background-color:lightgray;
-    color:white;
-}
-aside p,h3,h4{
-    margin:0;
-}
-aside h4{
-    padding-top:10px;
-    padding-left:10px;
-    padding-right:10px;
-}
-aside p{
-    padding-top:20px;
-    padding-left:10px;
-    padding-right:0px;
-    padding-bottom:8px;
-}
-
-aside {
-    padding-right:0px !important;
-    padding-top:-5px !important;
-}
-
-h1{font-size:40px;}
-h2{font-size:18px;}
-h3{font-size:16px;}
-h4{font-size:14px;}
-p{font-size:14px;}
-a{font-size:15px;}
-
-footer>p {
-    width: 250px;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
-}
-input[type=text]{
-    width: 50%;
+*{
+    margin: auto;
+    padding: auto;
+  }
+  body{
+    margin: 5% 25%;
+    background-color: #228CBE;
+  }
+  input[type=text], input[type=password] {
+    width: 100%;
     padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    margin: 1px 0;
+    border: 1px solid;
     box-sizing: border-box;
-}
-
-input[type=password] {
-    width: 50%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-input[type=submit] {
-    width: 50%;
-    background-color: orange;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: green;
-}
-
-div {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    background-color: #ffffff;
+    }
+    button {
+        background-color: blueviolet;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        width: 100%;
+      }
