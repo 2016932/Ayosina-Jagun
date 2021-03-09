@@ -18,7 +18,7 @@
         <h1>Create Account</h1>
         <div>
             <form>
-                <p>Your fullname (Surname First) <br><input type="text" placeholder="Fullname" id="name" min="15"
+                <p>Your fullname (Surname First) <br><input type="text" placeholder="Fullname" id="fullname" min="15"
                         max="25" required></p>
                 <p>Email <br> <input type="text" placeholder="Your mail" id="email" required></p>
                 <p>Password <br> <input type="password" placeholder="Password" id="password" required></p>
