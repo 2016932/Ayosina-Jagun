@@ -1,6 +1,6 @@
 <?php
 
-$conn=mysqli_connect("localhost", "root", "");
+$conn=mysqli_connect("localhost", "root", "daily planner");
 if(!$conn){
 	die("Database connection failed " . mysqli_errno($conn));
 }
