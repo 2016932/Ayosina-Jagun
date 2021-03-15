@@ -1,6 +1,5 @@
 <?php 
 session_start();
-ob_start();
 ?>
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
@@ -8,7 +7,7 @@ ob_start();
 <head>
     <meta charset="UTF-8">
     <title>Register</title>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="signup.css">
 
 </head>
 
@@ -42,6 +41,8 @@ ob_start();
                 <button type="submit" name="submit">Create your account</button>
             </form>
             <p>Already have an account? <a href="login.php">Login</a></p>
+
+       
         </div>
     </main>
 </body>

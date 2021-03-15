@@ -48,7 +48,7 @@
             // Get edit field value
             $edit = $('#editor').html();
             $.ajax({
-                url: 'get.php',
+                url: 'nottes2.php',
                 type: 'post',
                 data: {$data: $edit},
                 datatype: 'html',
