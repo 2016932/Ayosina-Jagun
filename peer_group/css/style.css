@@ -1,0 +1,21 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background: url('../images/pex.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family:  'Lucida Sans Unicode','Lucida Sans', Arial, sans-serif;
+}
+.container {
+    margin: 50px auto;
+    padding: auto 5px;;
+}
+form{
+    margin: 30vh 20%;;
+}
+input{
+    margin-bottom: 10px;
+}
+

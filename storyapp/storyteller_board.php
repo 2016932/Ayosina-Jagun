@@ -1,12 +1,38 @@
 <?php
 // Initialize the session
 session_start();
- 
-// Check if the user is logged in, if not then redirect him to login page
-if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-    header("location: login.php");
-    exit;
-}
+
+// Create database connection
+require_once('connection.php');
+$user_id=  mysqli_real_escape_string($link, $_SESSION['id']);
+ // Initialize message variable
+ $msg = "";
+ if(isset($_POST['upload'])){
+    $title =  mysqli_real_escape_string($link, $_POST['title']);
+    $image = mysqli_real_escape_string($link, $_FILES['image']['name']);
+    $image_text = mysqli_real_escape_string($link, $_POST['image_text']);
+    $tmp = $_FILES['image']['tmp_name'];
+    
+    if(empty($title) || empty($image_text) || empty($image)){
+      $msg= " Fill in all details or add a file ";
+    }
+    
+        //$files = $_FILES['image']['name'];
+      $target = 'upload/'. $image;
+      if(move_uploaded_file($tmp, $target)){
+        $sql = "INSERT INTO stories (users_id, title, image, image_text) VALUES( '$user_id', '$title','$image', '$image_text')";
+        if($result=mysqli_query($link, $sql)){
+            if($result === false){
+              die("Insert failed".mysqli_error($link));
+            }else{
+                 $msg ="Story Submitted";
+            }
+    }
+  }
+    
+    
+    }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,38 +45,63 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <style>
         body{ font: 14px sans-serif; }
     </style>
+    <style type="text/css">
+   #content{
+   	width: 50%;
+   	margin: 20px auto;
+   	border: 1px solid #cbcbcb;
+   }
+   form{
+   	width: 50%;
+   	margin: 20px auto;
+   }
+   form div{
+   	margin-top: 5px;
+   }
+   #img_div{
+   	width: 80%;
+   	padding: 5px;
+   	margin: 15px auto;
+   	border: 1px solid #cbcbcb;
+   }
+   #img_div:after{
+   	content: "";
+   	display: block;
+   	clear: both;
+   }
+   img{
+   	float: left;
+   	margin: 5px;
+   }
+</style>
 </head>
 
 <body>
 <h1 class="my-5">Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to your Dashboard</h1>
-        
-    <p><input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)" style="display: none;"></p>
-    <button><p><label for="file" style="cursor: pointer;">Click To Upload Your Image</label></p></button>
-    <p><img id="output" width="200" /></p>
-
-    <script>
-        var loadFile = function (event) {
-            var image = document.getElementById('output');
-            image.src = URL.createObjectURL(event.target.files[0]);
-        };
-    </script>
-
-    <div id="editer" contenteditable="true">
-    </div>
+       <center><?php echo $msg;?></center> 
+<div id="content">
+    
+  <form method="POST" action="storyteller_board.php" enctype="multipart/form-data">
+  	<input type="hidden" name="size" value="1000000">
+      <div>
+  	  <input type="file" name="image"  class="form-control">
+  	</div>
+      <div>
+  	  <input type="text" name="title"  class="form-control" placeholder="Write Story title">
+  	</div>
     <div>
-        <button type="submit" name="upload">UPLOAD</button>
-    </div>
-
-    <script type="text/javascript" language="javascript">
-    var editer = document.getElementById('editer');
-    function uploadFile(e) {
-        Let file = e.target.files[0]; //Image to be uploaded to the background
-        //Upload the background, omitted here. . . . . . . . . . .
-        //filePath is the image address returned in the background
-        editer.focus();
-        document.execCommand('InsertImage', false, filePath);
-    }
-</script>
+      <textarea 
+      	id="text" 
+      	cols="40" 
+      	rows="4" 
+      	name="image_text" 
+      	placeholder="Write a story..."  class="form-control" rows="20" cols="30"></textarea>
+  	</div>
+  	<div>
+  		<button type="submit" name="upload" class="btn btn-primary">POST</button>
+  	</div>
+</form>
+</div>
 
 </body>
 </html>
