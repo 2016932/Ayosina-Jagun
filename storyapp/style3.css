@@ -1,0 +1,22 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 28%;
+  }
+  h1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+  }
+ h3{
+    width: 12%;
+    border: 5px;
+    margin: auto;
+    font-stretch: expanded;
+    
+  }
+  body{
+    background-color: gold;
+  }

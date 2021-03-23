@@ -1,0 +1,46 @@
+*{
+    margin: auto;
+    padding: auto;
+    background-color: gold;
+ 
+  }
+  body{
+    margin: 5% 25%;
+    background-color: gold;
+  }
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 1px 0;
+    border: 1px solid;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    }
+    button {
+        background-color: grey;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        width: 100%;
+      }
+      .grid-container {
+        padding: 50px, 0px;
+        background-color: gold;
+        color: white;
+      }
+      .grid-container h1 {
+        font-weight: bolder;
+        font-size: 40px;
+        padding : 20px 0px;
+      }
+      h1{
+        color: grey;
+      }
+      .form-group{
+        color: black;
+      }
+      h3{
+        color: grey;
+      }
+      
