@@ -7,7 +7,7 @@
             </button>
             
             <!-- <img src="pictures/xmas.png" class="myImage animate__animated animate__fadeInLeft" alt="riverside agropro wishes you merry xmas and happy new year"> -->
-            <a href="index.php" id="projectName" class="animate__animated animate__zoomInDown">
+            <a href="homepage.php" id="projectName" class="animate__animated animate__zoomInDown">
                 <img src="pictures/icon.png" alt="" srcset="">
                 <span>Daily Task Web Application</span>
             </a>
@@ -16,4 +16,4 @@
         <!-- <div id="content" class="collapse navbar-collapse animate__animated animate__slideInLeft">
        </div> -->
     </div>
-</nav>
+</nav>  

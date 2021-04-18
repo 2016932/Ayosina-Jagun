@@ -101,7 +101,7 @@
     function display_deleted_users($table_name)
     {
         include "conn.php";
-        $sql= "SELECT * FROM $table_name WHERE deleted= 1 ORDER BY adminID DESC";
+        $sql= "SELECT * FROM $table_name WHERE deleted= 0 ORDER BY adminID DESC";
         $result= mysqli_query($conn, $sql);
         
         $admins= [];

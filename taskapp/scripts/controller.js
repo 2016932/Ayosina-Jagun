@@ -63,7 +63,7 @@ $(document).ready(function()
                     $("#error").fadeIn(700, function(){
                         $("#error").html(taskAdded);
                     });
-                    setTimeout('window.location.href= "index.php?Submission was successful"', 2500);
+                    window.location.href="homepage.php?Submission was successful";
                 }
                 else if(response=="notPrepared"){
                     $("#error").fadeIn(700, function(){

@@ -21,6 +21,7 @@
             mysqli_stmt_execute($stmt);
             echo "registered";
         }
+        
     }
     /**
      * end of the task registration form controller
@@ -51,6 +52,6 @@
                 mysqli_query($conn, $deleteUser);
             }
         }
-        redirect_to("index.php", "task deleted successfully");
+        redirect_to("homepage.php", "task deleted successfully");
     }
 ?>

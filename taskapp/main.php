@@ -4,7 +4,7 @@
             <!-- this is the sidebar menu -->
             <div class="col-md-3 col-sm-3 col-xs-12">
                 <div id="sideBody">
-                    <a href="homepage.php">Home</a><br>
+                    <a href="logout.php">Log Out</a><br>
                     <div class="dropdown">
                 <button class="dropbtn">Allplan</button>
                 <div class="dropdown-content">
@@ -15,7 +15,6 @@
                         <div class="dropdown-content">
                             <a href="personal.php">Personal</a>
                             <a href="work.php">Work</a>
-                            <a href="life.php">Life</a>
                             <a href="travel.php">Travel</a>
                             <a href="addcat.php">Add Category</a>
                             <a href="notes.php">Notes</a>
