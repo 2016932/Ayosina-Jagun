@@ -68,18 +68,18 @@ echo "Welcome". $_SESSION['user'];
             <div class="dropdown">
                 <button class="dropbtn">Allplan</button>
                 <div class="dropdown-content">
-                    <a href="favourite.html">Favourite</a><br>
+                    <a href="favourite.php">Favourite</a><br>
 
                     <div class="dropdown">
                         <button class="dropbtn">Category</button>
                         <div class="dropdown-content">
-                            <a href="personal.html" target="_blank">Personal</a>
-                            <a href="work.html" target="_blank">Work</a>
-                            <a href="life.html" target="_blank">Life</a>
-                            <a href="travel.html" target="_blank">Travel</a>
-                            <a href="addcat.html" target="_blank">Add Category</a>
-                            <a href="notes.html" target="_blank">Notes</a>
-                            <a href="share.html" target="_blank">Share</a>
+                            <a href="personal.php">Personal</a>
+                            <a href="work.php">Work</a>
+                            <a href="life.php">Life</a>
+                            <a href="travel.php">Travel</a>
+                            <a href="addcat.php">Add Category</a>
+                            <a href="notes.php">Notes</a>
+                            <a href="share.php">Share</a>
                         </div>
                     </div>
                 </div>

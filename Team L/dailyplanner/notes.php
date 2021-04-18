@@ -42,23 +42,65 @@
 
 
 <button id="save">Click to Save</button>
-<script type="text/javascript">
-    $(document).ready(function(argument) {
-        $('#save').click(function(){
-            // Get edit field value
-            $edit = $('#editor').html();
-            $.ajax({
-                url: 'nottes2.php',
-                type: 'post',
-                data: {$data: $edit},
-                datatype: 'html',
-                success: function(rsp){
-                    alert(rsp);
-                }
-            });
-        });
-    });
-</script>
+
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>content</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+<?php
+ require_once('connection.php');
+ $id =$msg = "";
+$id = mysqli_real_escape_string($db, $_GET) ;
+      $sql = "Select * from notes where users_id = '$id'";
+      $result = mysqli_query($db, $sql);
+      if($result===0){
+        die('Selection failed');
+      }else{
+        while($rows = mysqli_fetch_object($result)){}
+      }
+            ?>
+
+
+<?php
+if(isset($_POST['save'])){
+  $content =mysqli_real_escape_string($db, $_POST['content']);
+  $sql= "Insert into notes(users_id, content) Values('$id', '$content')";
+  if(mysqli_query($db, $sql)){
+      $msg = "saved";
+  }else{
+    $msg = "not saved";
+  }
+}
+  
+?>
+
+<?php
+
+$sql = "Select * from notes where users_id = '$id' order by created_at";
+      $res = mysqli_query($db, $sql);
+      if(mysqli_num_rows($res)==0){
+        echo "Not Saved";
+      }else{
+        while($row = mysqli_fetch_object($res)){
+            ?>
+            
+           
+            <p><?php echo  $row->content; ?></p>
+            <hr class=>
+            <?php
+        }
+      }
+        ?>
+
+</body>
+</html>
 
 </body>
 

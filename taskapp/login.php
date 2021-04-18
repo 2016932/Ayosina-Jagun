@@ -48,7 +48,8 @@ session_start();
 </html>
 <?php
     if(isset($_POST['submit'])){
-        require_once('connection.php');
+        require_once('lib/config.php');
+        require_once('lib/conn.php');
         $username =$_POST['username'];
         $password = $_POST['password'];
 

@@ -1,7 +1,8 @@
 <?php
     session_start();
     ob_start();
-    require_once('connection.php');
+    require_once('lib/config.php');
+    require_once('lib/conn.php');
     if(isset($_POST['submit'])){
         //code goes here
         var_dump($_POST);
