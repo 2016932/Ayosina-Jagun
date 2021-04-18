@@ -41,6 +41,7 @@ session_start();
           <label>
             <input type="checkbox" checked="checked" name="remember"> Remember me 
           </label>
+          <h3>Don't have an account? <a href="index.php">SIGN UP</a></h3>
         </div>
     </main>
 </body>
