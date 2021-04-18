@@ -64,6 +64,7 @@ $(document).ready(function()
                         $("#error").html(taskAdded);
                     });
                     window.location.href="homepage.php?Submission was successful";
+                    
                 }
                 else if(response=="notPrepared"){
                     $("#error").fadeIn(700, function(){
